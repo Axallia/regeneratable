@@ -7,5 +7,7 @@
 $execute if score *regeneratable.min_message_severity regeneratable.const matches ..3 \
     unless block $(x) $(y) $(z) #regeneratable:container run return \
     run tellraw @a [{"text":"<error> [regeneratable.regenerate.entry] No valid container was found at $(x) $(y) $(z)", "color": "red"}]
+# WHY DO I EVEN HAVE TO ADD THIS???? VANILLA DOES IT AUTOMATICALLY.
+$data merge block $(x) $(y) $(z) {Items:[]}
 $data merge block $(x) $(y) $(z) {LootTable:"$(loot_table_id)"}
 #$execute if score *regeneratable.min_message_severity regeneratable.const matches ..1 run tellraw @a "<info> [regeneratable.regenerate.entry] loot table entry ($(loot_table_id)) was succesfully regenerated at $(x) $(y) $(z)"
