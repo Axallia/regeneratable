@@ -1,0 +1,1 @@
+scoreboard players set *regeneratable.min_message_severity regeneratable.const 255

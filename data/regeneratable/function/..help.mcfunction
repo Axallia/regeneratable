@@ -16,6 +16,11 @@ tellraw @a [\
     "clickEvent": {"action": "suggest_command", "value": "/function regeneratable:clickable_example"}}, \
 "\n\n\n",\
 "§9-Functions:\n",\
+"§6>", {"text": ".set_min_message_severity",\
+    "color":"gold", "underlined": true,\
+    "clickEvent": {"action": "suggest_command", "value": "/function regeneratable:.set_min_message_severity."}}, \
+" Changes the minimal message severity in order for messages to display.\n",\
+" Used to, for example, silence all of the Debug Info and leave only the Warrnings and Errors. Or only the Errors. Or silence everything altogether.\n\n",\
 "§6>", {"text": ".set_max_update_order",\
     "color":"gold", "underlined": true,\
     "clickEvent": {"action": "suggest_command", "value": "/function regeneratable:.set_max_update_order {value:48}"}}, \

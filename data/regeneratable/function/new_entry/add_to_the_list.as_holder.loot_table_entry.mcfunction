@@ -10,7 +10,7 @@ scoreboard players add @s regeneratable.entries_amount.loot_tables 1
 function regeneratable:regenerate/entry.loot_table.temporal_chest.from_data with storage regeneratable:entry_buffer.block
 function regeneratable:regenerate/entry.loot_table.from_data with storage regeneratable:entry_buffer.loot_table
 
-execute if score *regeneratable.min_message_severity regeneratable.const matches ..1 run \
+execute if score *regeneratable.min_message_severity regeneratable.const matches ..0 run \
 tellraw @a [\
     {"text":"<info> [regeneratable.new_entry.holder] successfuly added new loot table entry for ("}, \
     {"storage": "regeneratable:entry_buffer.loot_table", "nbt": "loot_table_id"}, \

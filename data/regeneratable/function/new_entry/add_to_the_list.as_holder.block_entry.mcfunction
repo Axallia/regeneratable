@@ -7,7 +7,7 @@ scoreboard players add @s regeneratable.entries_amount.blocks 1
 # so you can see the result of how would it look like when regened
 function regeneratable:regenerate/entry.block.from_data with storage regeneratable:entry_buffer.block
 
-execute if score *regeneratable.min_message_severity regeneratable.const matches ..1 run \
+execute if score *regeneratable.min_message_severity regeneratable.const matches ..0 run \
 tellraw @a [\
     {"text":"<info> [regeneratable.new_entry.holder] successfuly added new block entry for ("}, \
     {"storage": "regeneratable:entry_buffer.block", "nbt": "block_id"}, \

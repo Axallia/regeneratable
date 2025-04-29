@@ -1,2 +1,2 @@
 function regeneratable:remove/entry.loot_table.as_holder with storage regeneratable:entry_buffer.block
-execute if score *regeneratable.min_message_severity regeneratable.const matches ..2 run tellraw @a "§6<warn> [regeneratable.new_entry.holder] A loot table entry at this postion already existed, so it got deleted in order for the new one to be added without overlaps"
+execute if score *regeneratable.min_message_severity regeneratable.const matches ..1 run tellraw @a "§6<warn> [regeneratable.new_entry.holder] A loot table entry at this postion already existed, so it got deleted in order for the new one to be added without overlaps"
