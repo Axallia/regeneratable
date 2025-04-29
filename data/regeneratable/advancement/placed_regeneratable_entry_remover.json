@@ -1,0 +1,47 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:any_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"equipment": {
+										"mainhand": {
+											"predicates": {
+												"minecraft:custom_data": {"regeneratable.entry_remover": true}
+											}
+										}
+									},
+									"nbt": "{playerGameType:1}"
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"equipment": {
+										"offhand": {
+											"predicates": {
+												"minecraft:custom_data": {"regeneratable.entry_remover": true}
+											}
+										}
+									},
+									"nbt": "{playerGameType:1}"
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "regeneratable:placed_regeneratable_entry_remover"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"pack": {
+		"pack_format": 48,
+		"description": "utility for server/mapmaking, allowing to create regenerating entries"
+	}
+}

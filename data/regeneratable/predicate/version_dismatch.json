@@ -1,0 +1,29 @@
+{
+	"condition": "minecraft:inverted",
+	"term": {
+		"condition": "minecraft:value_check",
+		"value": {
+			"type": "minecraft:score",
+			"target": "this",
+			"score": "regeneratable.version"
+		},
+		"range": {
+			"min": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "*regeneratable.global"
+				},
+				"score": "regeneratable.version"
+			},
+			"max": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "*regeneratable.global"
+				},
+				"score": "regeneratable.version"
+			}
+		}
+	}
+}

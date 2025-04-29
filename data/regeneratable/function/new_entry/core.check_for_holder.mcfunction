@@ -1,0 +1,1 @@
+$return run execute positioned $(x) $(y) $(z) if entity @n[type=marker, tag=regeneratable.holder, distance=..1]

@@ -1,0 +1,1 @@
+tellraw @s [{"text": "You are looking good today, "},{"selector": "@s"},"!"]

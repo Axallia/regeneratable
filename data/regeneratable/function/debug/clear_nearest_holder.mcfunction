@@ -1,0 +1,1 @@
+data merge entity @n[type=marker, tag=regeneratable.holder] {data:{entries:{blocks:[],loot_tables:[]}}}

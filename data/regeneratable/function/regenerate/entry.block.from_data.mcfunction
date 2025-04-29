@@ -1,0 +1,2 @@
+$setblock $(x) $(y) $(z) $(block_id) replace
+#$execute if score *regeneratable.min_message_severity regeneratable.const matches ..1 run tellraw @a "<info> [regeneratable.regenerate.entry] block entry ($(block_id)) was succesfully regenerated at $(x) $(y) $(z)"

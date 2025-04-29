@@ -1,0 +1,6 @@
+*.zip
+*.toremove
+_
+
+pack.py
+packProperties.json

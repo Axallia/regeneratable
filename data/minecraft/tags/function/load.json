@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "regeneratable:init",
+        "regeneratable:tick.runtime"
+    ]
+}

@@ -1,0 +1,2 @@
+execute if score *regeneratable.current_entry regeneratable.entry_type matches 0 run function regeneratable:new_entry/add_to_the_list.as_holder.block_entry with storage regeneratable:entry_buffer.block
+execute if score *regeneratable.current_entry regeneratable.entry_type matches 1 run function regeneratable:new_entry/add_to_the_list.as_holder.loot_table_entry with storage regeneratable:entry_buffer.block
