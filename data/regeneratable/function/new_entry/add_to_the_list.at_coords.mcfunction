@@ -1,2 +1,2 @@
-execute if score *regeneratable.min_message_severity regeneratable.const matches ..1 run tellraw @a "<info> [regeneratable.new_entry] attempt to add new entry to the holder..."
+execute if score *regeneratable.min_message_severity regeneratable.const matches ..0 run tellraw @a "<info> [regeneratable.new_entry] attempt to add new entry to the holder..."
 $execute positioned $(x) $(y) $(z) as @n[type=marker, tag=regeneratable.holder, distance=..1.1] run function regeneratable:new_entry/add_to_the_list.as_holder

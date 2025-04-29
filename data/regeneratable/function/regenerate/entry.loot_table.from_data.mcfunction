@@ -4,7 +4,7 @@
 #    {"storage": "regeneratable:entry_buffer.block", "nbt": "y"}, " ",\
 #    {"storage": "regeneratable:entry_buffer.block", "nbt": "z"}, " "\
 #    ]
-$execute if score *regeneratable.min_message_severity regeneratable.const matches ..3 \
+$execute if score *regeneratable.min_message_severity regeneratable.const matches ..2 \
     unless block $(x) $(y) $(z) #regeneratable:container run return \
     run tellraw @a [{"text":"<error> [regeneratable.regenerate.entry] No valid container was found at $(x) $(y) $(z)", "color": "red"}]
 # WHY DO I EVEN HAVE TO ADD THIS???? VANILLA DOES IT AUTOMATICALLY.
